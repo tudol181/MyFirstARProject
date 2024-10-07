@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class DistanceScript : MonoBehaviour
 {
-    private List<Animator> mAnimators= new List<Animator>(); 
+    private List<Animator> mAnimators = new List<Animator>();
     private bool isAttacking = false;
-    private float distance = 0.25f;
+    private float distance = 0.125f;
 
     void Start()
     {
         mAnimators.AddRange(GetComponentsInChildren<Animator>());
-    } 
+    }
 
     void Update()
     {
